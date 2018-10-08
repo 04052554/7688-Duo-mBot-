@@ -1,0 +1,14 @@
+#include<MeMCore.h>
+MeUltrasonicSenor ultraSensor(PORT_3);
+MeDCMotor MotorL(M1);
+MeDCMotor MotorR(M2);
+int distance = 0;
+void setup()
+{
+  Serial.begin(9600);
+}
+void loop()
+{
+  distance = ultraSensor.distanceCm();
+  Serial.print(distance);
+}
