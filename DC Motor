@@ -1,0 +1,10 @@
+#include<MeMCore.h>
+MeDCMotor MortorL(M1);
+MeDCMotor MortorR(M2);
+void setup()
+{
+}
+void loop()
+{
+  MotorL.run(100);
+}
